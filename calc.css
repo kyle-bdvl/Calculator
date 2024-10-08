@@ -2,12 +2,14 @@
 body{
   margin:0px;
   padding:0px;
+  font-family: 'Poppins';
 }
 
 .master{
   display:flex;
   justify-content: center;
   align-items: center;
+  margin-top:20px;
 }
 
 .main-frame{
@@ -18,17 +20,20 @@ body{
   flex-direction: column;
   justify-content: top;
   align-items: center;
+  border-radius: 9px;
   
 }
 
 .display{
-  height :200px;
+  height :210px;
   width:400px;
   border-bottom:3px solid rgb(232, 232, 232);
   background-color: rgb(27, 28, 30);
+  
 }
 
 .question{ 
+  margin-top:10px;
   margin-left:15px;
   font-size:40px;
   color:rgb(132, 126, 118);

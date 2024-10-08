@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculator</title>
   <link rel="stylesheet" href="calc.css"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -20,28 +23,28 @@
         <button class="backspace"><<</button>
 
         <div class="buttonRow">
-          <button class="calcButton Gray">C</button>
-          <button class="calcButton Gray">( )</button>
+          <button class="calcButton Gray" onclick="clear()">C</button>
+          <button class="calcButton Gray" >( )</button>
           <button class="calcButton Gray">%</button>
           <button class="calcButton Orange">/</button>
         </div>
         <div class="buttonRow">
-          <button class="calcButton">7</button>
-          <button class="calcButton">8</button>
-          <button class="calcButton">9</button>
-          <button class="calcButton Orange">X</button>
+          <button class="calcButton" onclick="getNumber(7)">7</button>
+          <button class="calcButton" onclick="getNumber(8)">8</button>
+          <button class="calcButton" onclick="getNumber(9)">9</button>
+          <button class="calcButton Orange" onclick="getOperator('*')">X</button>
         </div>
         <div class="buttonRow">
-          <button class="calcButton">4</button>
-          <button class="calcButton">5</button>
-          <button class="calcButton">6</button>
-          <button class="calcButton Orange">-</button>
+          <button class="calcButton" onclick="getNumber(4)">4</button>
+          <button class="calcButton" onclick="getNumber(5)">5</button>
+          <button class="calcButton" onclick="getNumber(6)">6</button>
+          <button class="calcButton Orange" onclick="getOperator('-')">-</button>
         </div>
         <div class="buttonRow">
-          <button class="calcButton">1</button>
-          <button class="calcButton">2</button>
-          <button class="calcButton">3</button>
-          <button class="calcButton Orange">+</button>
+          <button class="calcButton" onclick="getNumber(1)">1</button>
+          <button class="calcButton" onclick="getNumber(2)">2</button>
+          <button class="calcButton" onclick="getNumber(3)">3</button>
+          <button class="calcButton Orange" onclick="getNumber('+')">+</button>
         </div>
         <div class="buttonRow">
           <button class="calcButton" >+/-</button>
