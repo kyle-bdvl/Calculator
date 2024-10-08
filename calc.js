@@ -19,4 +19,7 @@ function divide (num1, num2){
     throw new Error ('Error:division by 0 is not allowed');
   return num1/ num2;
 }
+
+const answer = document.getElementById("answer");
+const display = document.getElementById("question");
 //to make the buttons appear on screen 
