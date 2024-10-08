@@ -22,4 +22,5 @@ function divide (num1, num2){
 
 const answer = document.getElementById("answer");
 const display = document.getElementById("question");
+//some code to commit to git hub
 //to make the buttons appear on screen 
