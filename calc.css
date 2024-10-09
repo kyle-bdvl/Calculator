@@ -3,7 +3,7 @@ body{
   margin:0px;
   padding:0px;
   font-family: 'Poppins';
-  background-color: gray;
+  background-color: rgb(128, 128, 128);
 }
 
 .master{
@@ -17,7 +17,7 @@ body{
 .main-frame{
   height:750px;
   width:400px;
-  background-color: rgb(37, 38, 40);
+  background-color: rgb(37, 40, 37);
   display:flex;
   flex-direction: column;
   justify-content: top;
@@ -48,7 +48,7 @@ body{
 input{ 
   font-size: 65px;
   text-align: right;
-  
+  color:aliceblue;
 }
 
 .button-area {
@@ -97,6 +97,5 @@ input{
 }
 
 .num{
-  
   background-color: rgb(83, 61, 40);
 }

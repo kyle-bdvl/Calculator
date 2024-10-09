@@ -3,7 +3,11 @@ let firstNumber;
 let secondNumber;
 let step =0;
 let operation;
-let result=0;
+let result=null;
+
+// to not allow users to type stuff in the input area 
+document.getElementById('display').
+  disabled =true;
 
 //the array for the calculations 
 let numArray =[];
@@ -31,20 +35,26 @@ function getNumber(num){
 function getOperator(op){
   step =2 
   operation =op;
+  display.value = operation;
+  secondNumArray =[];
 }
 //to clear all 
-function clear(){ 
+let clearCalc =() =>{ 
   firstNumber = 0;
   secondNumber =0;
   step =0;
   operation = 0;
-  result=0;
+  result=null;
   numArray=[];
   secondNumArray=[];
-  console.log('display');
+  display.value =0;
+  console.log('clear button is working');
 }
 
 let calculatorEquals = ()=>{
+  if (result != null){
+    firstNumber = result;
+  }
   if (operation ==='+'){
     result = firstNumber + secondNumber;
     display.value = result;
@@ -61,9 +71,18 @@ let calculatorEquals = ()=>{
   else {
     if (secondNumber === 0){
       throw new Error('cannot divide by zero ');
+      
     }
     result = firstNumber / secondNumber;
     display.value = result;
   }
 }
+
+let divideBy100 = ()=> { 
+  result = result / 100 ; 
+  display.value = result
+}
+
+ 
+
 

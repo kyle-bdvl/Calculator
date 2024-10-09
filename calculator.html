@@ -22,9 +22,9 @@
         <button class="backspace"><<</button>
 
         <div class="buttonRow">
-          <button class="calcButton Gray" onclick="clear()">C</button>
+          <button class="calcButton Gray" onclick="clearCalc()">C</button>
           <button class="calcButton Gray" >( )</button>
-          <button class="calcButton Gray">%</button>
+          <button class="calcButton Gray" onclick="divideBy100()">%</button>
           <button class="calcButton Orange" onclick="getOperator('/')">/</button>
         </div>
         <div class="buttonRow">
@@ -46,7 +46,7 @@
           <button class="calcButton Orange" onclick="getOperator('+')">+</button>
         </div>
         <div class="buttonRow">
-          <button class="calcButton" >+/-</button>
+          <button class="calcButton" onclick="changeSymbols()">+/-</button>
           <button class="calcButton" onclick="getNumber(0)">0</button>
           <button class="calcButton">.</button>
           <button class="calcButton Orange" onclick="calculatorEquals()">=</button>
