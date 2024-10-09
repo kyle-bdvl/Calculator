@@ -14,8 +14,7 @@
   <div class="master">
     <div class="main-frame">
       <div class="display">
-        <p class="question">88*56</p>
-        <p class="answer">4928</p>
+        <input type="text" id="display">
 
       </div>
       
@@ -26,7 +25,7 @@
           <button class="calcButton Gray" onclick="clear()">C</button>
           <button class="calcButton Gray" >( )</button>
           <button class="calcButton Gray">%</button>
-          <button class="calcButton Orange">/</button>
+          <button class="calcButton Orange" onclick="getOperator('/')">/</button>
         </div>
         <div class="buttonRow">
           <button class="calcButton" onclick="getNumber(7)">7</button>
@@ -44,13 +43,13 @@
           <button class="calcButton" onclick="getNumber(1)">1</button>
           <button class="calcButton" onclick="getNumber(2)">2</button>
           <button class="calcButton" onclick="getNumber(3)">3</button>
-          <button class="calcButton Orange" onclick="getNumber('+')">+</button>
+          <button class="calcButton Orange" onclick="getOperator('+')">+</button>
         </div>
         <div class="buttonRow">
           <button class="calcButton" >+/-</button>
-          <button class="calcButton">0</button>
+          <button class="calcButton" onclick="getNumber(0)">0</button>
           <button class="calcButton">.</button>
-          <button class="calcButton Orange">=</button>
+          <button class="calcButton Orange" onclick="calculatorEquals()">=</button>
         </div>
 
         
@@ -58,6 +57,7 @@
       </div>
     </div>
   </div>
+  <script src="calc.js"></script>
 </body>
 
 </html>
